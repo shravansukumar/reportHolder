@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="RecordDetailsTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordDetailsTableViewCell" id="KGk-i7-Jjw" customClass="RecordDetailsTableViewCell" customModule="reportHolder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66N-go-v8S" userLabel="nameStaticLabel">
+                        <rect key="frame" x="25" y="0.0" width="53.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzK-rY-cwG" userLabel="ageStaticLabel">
+                        <rect key="frame" x="25" y="22" width="37.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4O-uG-U6Q" userLabel="nameLabel">
+                        <rect key="frame" x="88.5" y="0.0" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfS-e5-e0u" userLabel="ageLabel">
+                        <rect key="frame" x="88.5" y="19" width="37.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAI-nI-fgu" userLabel="seperatorView">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OPG-Qf-sUv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gzK-rY-cwG" secondAttribute="bottom" id="2Ie-MP-RHi"/>
+                    <constraint firstItem="W4O-uG-U6Q" firstAttribute="top" secondItem="66N-go-v8S" secondAttribute="top" id="3IU-Ku-bPb"/>
+                    <constraint firstItem="66N-go-v8S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BRJ-Gn-yWg"/>
+                    <constraint firstItem="hfS-e5-e0u" firstAttribute="top" secondItem="W4O-uG-U6Q" secondAttribute="bottom" constant="1" id="BSN-to-Emi"/>
+                    <constraint firstItem="66N-go-v8S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="En1-2n-IMv"/>
+                    <constraint firstAttribute="bottom" secondItem="hfS-e5-e0u" secondAttribute="bottom" id="ZqB-dr-IPZ"/>
+                    <constraint firstItem="gzK-rY-cwG" firstAttribute="leading" secondItem="66N-go-v8S" secondAttribute="leading" id="apl-h8-OFw"/>
+                    <constraint firstAttribute="bottom" secondItem="XAI-nI-fgu" secondAttribute="bottom" id="av3-MC-pLg"/>
+                    <constraint firstItem="W4O-uG-U6Q" firstAttribute="leading" secondItem="66N-go-v8S" secondAttribute="trailing" constant="10" id="i1c-Xa-WTj"/>
+                    <constraint firstAttribute="trailing" secondItem="XAI-nI-fgu" secondAttribute="trailing" id="u1m-uI-4nE"/>
+                    <constraint firstItem="XAI-nI-fgu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wJa-hF-qxA"/>
+                    <constraint firstItem="hfS-e5-e0u" firstAttribute="leading" secondItem="W4O-uG-U6Q" secondAttribute="leading" id="wz4-Tc-RN4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="hfS-e5-e0u" id="dT1-c7-C7K"/>
+                <outlet property="nameLabel" destination="W4O-uG-U6Q" id="kIf-L6-aK8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
